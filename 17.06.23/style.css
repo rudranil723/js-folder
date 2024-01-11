@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 2px solid red;
+    margin : 20px;
+    padding: 20px;
+    display: flex;
+    background: cyan;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bg-primary{
+    background-color: blueviolet;
+}
+.text-success{
+    color: green;
+}

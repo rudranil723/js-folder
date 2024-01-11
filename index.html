@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript</title>
+  </head>
+  <body>
+    <script>
+      //declaring variable
+      // as you can see let and var both can be used to declare variables
+      // difference btw let and var is
+      // var can be redeclared while let can not be
+      //var can be used anywhere i.e block free
+      // let has a limited block space i.e can be used only inside the specific block
+      let x;
+      x = 4;
+      var z = 5;
+      var z = 15; // this is possible
+      // using colsole .log to display variable
+      // coz seems like this is how javas displays output
+      console.log(3 + 5 + x + z);
+      // string variable and input
+      var y = "rudy";
+      console.log(y);
+      // const is alos used to declare constants i.e can not be redeclared or changed
+      const a = 10;
+      // operators and arethematics are pretty same so caz
+      // using let you can assign all types of data types like integer, string, bollean , null
+      // while adding a int and string javaS will treat the num as string
+      let b = 9;
+      let c = "cat";
+      let e = "a sentance can also be used";
+      console.log(b + c + e); // here b will be treated as string and so it will be concatinated
+      let d = true;
+      // javaS has a special datatype called object to declate objects, array and date
+      let cars = ["alto", "nano", "limo"];
+      console.log(cars);
+      // to declare onjects
+      let person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        eyeColor: "blue",
+      };
+      console.log(person);
+      //this is how you use objects in javaS
+      console.log(person.age);
+      console.log(person.firstName);
+
+      // funtions is javaS
+      function add(a, b) {
+        return a + b;
+      }
+      console.log(add(3, 7));
+    </script>
+    // this is how you make events in javaS // here button is the events
+    <button onclick="displayDate()">The time is?</button>
+    <script>
+      function displayDate() {
+        // document.getElementById("demo").innerHTML = Date();
+        console.log((document.getElementById("demo").innerHTML = Date()));
+      }
+    </script>
+    <p id="demo"></p>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+         
+:root{
+    --card-width-lg:157px;
+    --card-height-lg:220px;
+
+    --card-width-sm:120px;
+    --card-height-sm:168px;
+
+    --num-cards:4;
+
+    --card-horizontal-space-lg: 100px;
+    --card-horizontal-space-sm: 50px;
+
+    --badge-bg-color:darkgrey;
+    --primary-color: black;
+    --secondary-color: #ffffff;
+
+    --primary-font: 'Quicksand', sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    font-family: 'Lily Clover', sans-serif;
+}
+
+main{
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    background-color: sandybrown;
+}
+
+.card-container{
+    position: relative;
+    height: 100%;
+    width:calc(var(--card-width-lg) * (var(--num-cards) / 2) + var(--card-horizontal-space-lg));
+}

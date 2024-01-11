@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hunt the Ace</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/lily-clover" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="header-title-container">
+        <h1>HUNT THE ACE</h1>
+      </div>
+      <div class="header-round-info-container">
+        <div class="header-img-container">
+          <img
+            src="/cardsgameproject/images/AceSpades.png"
+            alt="a image of a card"
+          />
+        </div>
+        <div class="header-score-container">
+          <h2 class="score">Score&nbsp;<span class="badge">0</span></h2>
+        </div>
+        <div class="header-round-container">
+          <h2 class="round">Round&nbsp;<span class="badge">0</span></h2>
+        </div>
+      </div>
+      <div class="header-status-info-container">
+        <p class="current-status">Click 'Play Game' button to play game</p>
+      </div>
+      <div class="header-button-container">
+        <div class="game-play-button-container">
+          <button id="playgame" class="play-game">Play Game</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="card-container">
+        <div class="card-pos-a"></div>
+        <div class="card-pos-b"></div>
+        <div class="card-pos-c"></div>
+        <div class="card-pos-d"></div>
+      </div>
+    </main>
+    <div class="spinner"></div>
+
+    <style>
+      .spinner {
+        position: relative;
+        width: 22.4px;
+        height: 22.4px;
+      }
+
+      .spinner::before,
+      .spinner::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        animation: spinner-b4c8mmmd 0.5s backwards,
+          spinner-49opz7md 1.25s 0.5s infinite ease;
+        border: 5.6px solid #474bff;
+        border-radius: 50%;
+        box-shadow: 0 -33.6px 0 -5.6px #474bff;
+        position: absolute;
+      }
+
+      .spinner::after {
+        animation-delay: 0s, 1.25s;
+      }
+
+      @keyframes spinner-b4c8mmmd {
+        from {
+          box-shadow: 0 0 0 -5.6px #474bff;
+        }
+      }
+
+      @keyframes spinner-49opz7md {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <script src="index.js"></script>
+  </body>
+</html>
